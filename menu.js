@@ -4,16 +4,16 @@
   Upload new image files into this same GitHub repository and enter the filename.
 */
 const menu = [
-  {category:"Thali (Full Meals)", name:"Paneer Thali", description:"A wholesome meal with paneer curry, dal, rice, roti, seasonal vegetables and salad.", price:200, quantity:"1 plate", available:true, image:"paneer-thali.jpg"},
-  {category:"Thali (Full Meals)", name:"Mushroom Thali", description:"A comforting thali featuring mushroom curry with rice, roti, dal and seasonal sides.", price:200, quantity:"1 plate", available:true, image:"paneer-thali.jpg"},
+  {category:"Thali (Full Meals)", name:"Paneer Thali", description:"A wholesome meal with paneer curry, dal, rice, roti, seasonal vegetables and salad.", price:200, quantity:"1 plate", available:true, image:"Paneer-Thali.webp"},
+  {category:"Thali (Full Meals)", name:"Mushroom Thali", description:"A comforting thali featuring mushroom curry with rice, roti, dal and seasonal sides.", price:200, quantity:"1 plate", available:true, image:"Mashroom Thali.jpg"},
   {category:"Thali (Full Meals)", name:"Veg Thali", description:"Homestyle vegetarian meal with rice, dal, roti, seasonal sabzi and salad.", price:100, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
-  {category:"Thali (Full Meals)", name:"Chicken Thali", description:"A satisfying meal served with chicken curry, rice, roti and homestyle accompaniments.", price:200, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
-  {category:"Thali (Full Meals)", name:"Meat Thali", description:"Traditional meat curry served with rice, roti and seasonal sides.", price:250, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
-  {category:"Thali (Full Meals)", name:"Fish Thali", description:"Fish curry served with rice, roti and homestyle vegetarian sides.", price:200, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
-  {category:"Thali (Full Meals)", name:"Egg Curry Thali", description:"Egg curry with rice, roti, dal and seasonal vegetables.", price:150, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
+  {category:"Thali (Full Meals)", name:"Chicken Thali", description:"A satisfying meal served with chicken curry, rice, roti and homestyle accompaniments.", price:200, quantity:"1 plate", available:true, image:"Chicken Thali.jpg"},
+  {category:"Thali (Full Meals)", name:"Meat Thali", description:"Traditional meat curry served with rice, roti and seasonal sides.", price:250, quantity:"1 plate", available:true, image:"Mutton Thali.webp"},
+  {category:"Thali (Full Meals)", name:"Fish Thali", description:"Fish curry served with rice, roti and homestyle vegetarian sides.", price:200, quantity:"1 plate", available:true, image:"Fish Thali.jpg"},
+  {category:"Thali (Full Meals)", name:"Egg Curry Thali", description:"Egg curry with rice, roti, dal and seasonal vegetables.", price:150, quantity:"1 plate", available:true, image:"Egg Curry Thali.jpg"},
 
-  {category:"Rice & Special", name:"Kadhi Chawal", description:"Comforting rice served with tangy, homestyle kadhi.", price:50, quantity:"1 plate", available:true, image:"dal.jpg"},
-  {category:"Rice & Special", name:"Dooska + Sabji", description:"A Jharkhand favourite: soft, savoury dooska served with seasonal sabzi.", price:50, quantity:"2 pcs + sabji", available:true, image:"litti-chokha.jpg"},
+  {category:"Rice & Special", name:"Kadhi Chawal", description:"Comforting rice served with tangy, homestyle kadhi.", price:50, quantity:"1 plate", available:true, image:"Kadhi Chawal.webp"},
+  {category:"Rice & Special", name:"Dhooska + Sabji", description:"A Jharkhand favourite: soft, savoury dooska served with seasonal sabzi.", price:50, quantity:"4 pcs + sabji", available:true, image:"Dhooska Sabzi.jpg"},
   {category:"Rice & Special", name:"Chhilka + Sabji", description:"Traditional rice-and-dal chhilka served with a flavourful vegetable curry.", price:50, quantity:"2 pcs + sabji", available:true, image:"litti-chokha.jpg"},
   {category:"Rice & Special", name:"Khichdi", description:"Simple, soothing rice and lentil khichdi, cooked homestyle.", price:50, quantity:"1 plate", available:true, image:"dal.jpg"},
   {category:"Rice & Special", name:"Veg Biryani", description:"Fragrant rice cooked with vegetables and aromatic spices.", price:100, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
