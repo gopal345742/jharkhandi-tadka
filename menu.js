@@ -5,7 +5,7 @@
 */
 const menu = [
   {category:"Thali (Full Meals)", name:"Paneer Thali", description:"A wholesome meal with paneer curry, dal, rice, roti, seasonal vegetables and salad.", price:200, quantity:"1 plate", available:true, image:"Paneer-Thali.webp"},
-  {category:"Thali (Full Meals)", name:"Mushroom Thali", description:"A comforting thali featuring mushroom curry with rice, roti, dal and seasonal sides.", price:200, quantity:"1 plate", available:true, image:"Mashroom Thali.jpg"},
+  {category:"Thali (Full Meals)", name:"Mushroom Thali", description:"A comforting thali featuring mushroom curry with rice, roti, dal and seasonal sides.", price:200, quantity:"1 plate", available:true, image:"Mushroom Thali.jpg"},
   {category:"Thali (Full Meals)", name:"Veg Thali", description:"Homestyle vegetarian meal with rice, dal, roti, seasonal sabzi and salad.", price:100, quantity:"1 plate", available:true, image:"veg-thali.jpg"},
   {category:"Thali (Full Meals)", name:"Chicken Thali", description:"A satisfying meal served with chicken curry, rice, roti and homestyle accompaniments.", price:200, quantity:"1 plate", available:true, image:"Chicken Thali.jpg"},
   {category:"Thali (Full Meals)", name:"Meat Thali", description:"Traditional meat curry served with rice, roti and seasonal sides.", price:250, quantity:"1 plate", available:true, image:"Mutton Thali.webp"},
