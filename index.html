@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173d2b">
+<meta name="description" content="Authentic Jharkhandi and desi food delivered fresh in Obra, Uttar Pradesh. Explore the menu and order on WhatsApp.">
+<title>Jharkhandi Tadka | Desi Swad, Apne Gaon Ka</title>
+<style>
+:root{--green:#173d2b;--green2:#245b3d;--gold:#f2b632;--cream:#fff9ec;--ink:#20251f;--muted:#6d756c;--line:#e9e1d2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fffdf8;color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+header{position:sticky;top:0;z-index:10;background:#fffdf8ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--green);font-size:1.18rem}.brand-mark{width:42px;height:42px;border-radius:14px;background:var(--green);color:var(--gold);display:grid;place-items:center;font-size:1.4rem}
+.navlinks{display:flex;align-items:center;gap:24px;font-size:.94rem;font-weight:650}.navlinks a:hover{color:var(--green2)}
+.order-btn{border:0;border-radius:999px;background:var(--green);color:white;padding:11px 18px;font-weight:750}
+.hero{background:radial-gradient(circle at 80% 20%,#4c7852 0,transparent 28%),linear-gradient(120deg,#102f22,#24583a);color:white;overflow:hidden}
+.hero-inner{max-width:1150px;margin:auto;padding:76px 22px 70px;display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center}
+.eyebrow{color:#f7ca5a;text-transform:uppercase;letter-spacing:.15em;font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:.99;letter-spacing:-.055em;margin:15px 0}.hero h1 span{color:var(--gold)}.hero p{color:#e1ebdf;font-size:1.1rem;line-height:1.7;max-width:540px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn-gold{background:var(--gold);color:#1c2a1f;border:0;border-radius:999px;padding:14px 22px;font-weight:850}.btn-outline{border:1px solid #ffffff8a;background:transparent;color:white;border-radius:999px;padding:13px 22px;font-weight:750}
+.hero-plate{min-height:340px;border-radius:32px;background:linear-gradient(145deg,#f8e8c8,#c5a16b);display:grid;place-items:center;position:relative;box-shadow:0 25px 70px #0005;transform:rotate(2deg)}
+.poster-wrap{padding:14px;transform:rotate(1deg)}.poster-preview{display:block;width:min(100%,330px);max-height:440px;object-fit:contain;border-radius:12px;box-shadow:0 12px 30px #51351d55}
+.sticker{position:absolute;bottom:24px;left:18px;background:var(--gold);color:#233326;padding:12px 17px;border-radius:14px;font-weight:900;transform:rotate(-5deg)}
+.strip{background:var(--gold);color:#263324;text-align:center;padding:13px 18px;font-weight:800}
+.wrap{max-width:1150px;margin:auto;padding:68px 22px}.section-head{text-align:center;margin-bottom:32px}.section-head .eyebrow{color:var(--green2)}h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.categories{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:0 0 28px}.cat{border:1px solid var(--line);background:white;padding:9px 16px;border-radius:999px;font-weight:700;color:#4d594e}.cat.active,.cat:hover{background:var(--green);color:white;border-color:var(--green)}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.food-card{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}.food-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #203a2012}
+.food-art{height:132px;background:linear-gradient(135deg,#f8edda,#e9d2a9);display:grid;place-items:center;font-size:4.3rem}.food-info{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.food-info h3{margin:0;font-size:1.05rem}.food-meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto}.price{font-size:1.15rem;font-weight:900;color:var(--green)}.add{border:0;background:#eaf2e9;color:var(--green);font-weight:850;border-radius:999px;padding:8px 14px}.add:hover{background:var(--green);color:white}
+.notice{background:var(--cream);border:1px solid #f0dfbb;border-radius:20px;padding:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.notice-item{display:flex;gap:12px;align-items:flex-start}.notice-item b{display:block}.notice-item span{font-size:1.5rem}
+.about{background:#f5f2e8}.about-inner{max-width:1150px;margin:auto;padding:65px 22px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-art{min-height:280px;border-radius:28px;background:linear-gradient(140deg,#d9e2c9,#f1d5a5);display:grid;place-items:center;font-size:7rem}.about p{line-height:1.8;color:#59645a}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{border:1px solid var(--line);border-radius:20px;padding:24px;background:white}.contact-card h3{margin:0 0 8px}.contact-card p{color:var(--muted);line-height:1.65}
+footer{background:#102c20;color:#eaf0e8;padding:30px 22px}.footer-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner small{color:#b9c8bb}
+.cartbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:20;background:var(--gold);color:#1d2d21;border:0;border-radius:999px;padding:13px 22px;font-weight:900;box-shadow:0 8px 28px #0003;display:none;white-space:nowrap}
+.modal-backdrop{display:none;position:fixed;inset:0;background:#0008;z-index:30;padding:18px;align-items:center;justify-content:center}.modal{background:white;border-radius:22px;max-width:520px;width:100%;max-height:85vh;overflow:auto;padding:23px}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h3{margin:0}.close{border:0;background:#f1f1ed;border-radius:50%;width:35px;height:35px;font-size:1.2rem}.cart-lines{margin:18px 0}.cart-line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.qty button{border:0;border-radius:50%;width:27px;height:27px;background:#edf3eb;color:var(--green);font-weight:900}.total{display:flex;justify-content:space-between;font-weight:900;font-size:1.15rem;padding:12px 0}.field{width:100%;padding:12px;border:1px solid #d8ded5;border-radius:10px;margin:7px 0 12px;font:inherit}.wa{display:block;text-align:center;width:100%;padding:14px;border:0;border-radius:12px;background:#1d9d55;color:white;font-weight:900}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr;padding-top:55px}.hero-plate{min-height:260px}.menu-grid{grid-template-columns:repeat(2,1fr)}.about-inner{grid-template-columns:1fr}.navlinks{gap:12px}.notice{grid-template-columns:1fr}}
+@media(max-width:540px){.nav{padding:10px 15px}.navlinks a:not(.order-btn){display:none}.brand{font-size:1rem}.brand-mark{width:36px;height:36px}.hero-inner{padding:48px 18px}.hero-plate{min-height:220px}.wrap{padding:52px 16px}.menu-grid{grid-template-columns:1fr 1fr;gap:10px}.food-art{height:100px;font-size:3.2rem}.food-info{padding:12px}.food-info h3{font-size:.92rem}.add{padding:7px 10px}.price{font-size:1rem}.contact-grid{grid-template-columns:1fr}.about-inner{padding:50px 18px}}
+</style>
+</head>
+<body>
+<header><nav class="nav">
+  <a class="brand" href="#"><span class="brand-mark">🍲</span><span>JHARKHANDI<br>TADKA</span></a>
+  <div class="navlinks"><a href="#menu">Our Menu</a><a href="#about">Our Story</a><a href="#contact">Contact</a><button class="order-btn" onclick="openCart()">Your Order <span id="navCount">0</span></button></div>
+</nav></header>
+<main>
+<section class="hero"><div class="hero-inner">
+  <div><div class="eyebrow">Authentic desi food · Obra, UP</div><h1>Desi Swad,<br><span>Apne Gaon Ka.</span></h1>
+  <p>Ghar jaisa swaad, fresh bana hua khana aur apnepan ki khushboo. Explore our menu and place your order directly on WhatsApp.</p>
+  <div class="hero-actions"><a class="btn-gold" href="#menu">Order through website ↓</a><a class="btn-outline" href="https://wa.me/917905997444?text=Namaste%20Jharkhandi%20Tadka%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">Quick WhatsApp order</a></div>
+  </div>
+  <div class="hero-plate poster-wrap"><img class="poster-preview" src="poster.jpg" alt="Jharkhandi Tadka food menu and delivery poster"><div class="sticker">Ghar Jaisa Swad ❤️</div></div>
+</div></section>
+<div class="strip">📍 Delivery across Obra, Uttar Pradesh &nbsp; · &nbsp; 🕙 Orders: 10 AM – 8 PM &nbsp; · &nbsp; 🚚 Next-day delivery</div>
+
+<section class="wrap" id="menu"><div class="section-head"><div class="eyebrow">Made with apnapan</div><h2>Explore Our Menu</h2><p>Choose your favourites and add them to your order.</p></div>
+<div class="categories" id="categories"></div><div class="menu-grid" id="menuGrid"></div>
+<div class="notice">
+ <div class="notice-item"><span>🕙</span><div><b>Order timing</b><small>10:00 AM – 8:00 PM</small></div></div>
+ <div class="notice-item"><span>📅</span><div><b>Plan ahead</b><small>Book at least one day in advance</small></div></div>
+ <div class="notice-item"><span>🛵</span><div><b>Delivery</b><small>Next-day delivery in service area</small></div></div>
+</div>
+</section>
+<section class="about" id="about"><div class="about-inner">
+ <div class="about-art">🍛🌿</div>
+ <div><div class="eyebrow">Our promise</div><h2>A taste of home.</h2><p>Jharkhandi Tadka brings you the comfort of local, traditional and desi food. We believe good food should feel familiar, fresh and full of flavour. From wholesome thalis to regional favourites, every order is prepared with care.</p><p><b>Our thought:</b> Local Food · Fresh · Healthy · Authentic.</p></div>
+</div></section>
+<section class="wrap" id="contact"><div class="section-head"><div class="eyebrow">We are here for you</div><h2>Order & Contact</h2><p>Have a question or want to plan an order? Talk to us directly.</p></div>
+<div class="contact-grid">
+ <div class="contact-card"><h3>📍 Delivery location</h3><p>Obra, Uttar Pradesh<br>Delivery availability depends on your location. Please confirm your address on WhatsApp.</p></div>
+ <div class="contact-card"><h3>📞 Call / WhatsApp</h3><p><a href="tel:+917905997444"><b>7905997444</b></a><br>Orders accepted from 10 AM to 8 PM.</p><a class="order-btn" href="https://wa.me/917905997444" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</div>
+<p style="text-align:center;color:#8a9188;font-size:.85rem;margin-top:25px">Payment: Advance UPI payment required. Cash on delivery is not available. Payment details can be confirmed on WhatsApp.</p>
+</section>
+</main>
+<footer><div class="footer-inner"><div><b>🍲 Jharkhandi Tadka</b><br><small>Desi Swad, Apne Gaon Ka</small></div><small>© <span id="year"></span> Jharkhandi Tadka. All rights reserved.</small></div></footer>
+<button class="cartbar" id="cartBar" onclick="openCart()">🛒 View order · <span id="cartCount">0</span> items</button>
+<div class="modal-backdrop" id="backdrop" onclick="if(event.target===this)closeCart()"><div class="modal">
+ <div class="modal-head"><h3>Your order</h3><button class="close" onclick="closeCart()">×</button></div>
+ <div class="cart-lines" id="cartLines"></div><div class="total"><span>Total</span><span id="total">₹0</span></div>
+ <label for="customerName"><b>Your name</b></label><input class="field" id="customerName" placeholder="Enter your name">
+ <label for="customerAddress"><b>Delivery address</b></label><textarea class="field" id="customerAddress" rows="2" placeholder="House / area / landmark in Obra"></textarea>
+ <label for="customerNote"><b>Order note (optional)</b></label><input class="field" id="customerNote" placeholder="Any special instruction?">
+ <button class="wa" onclick="sendOrder()">Submit website order via WhatsApp</button>
+ <small style="display:block;color:#777;margin-top:10px">This website order form prepares your order and sends it to the business WhatsApp number. It does not charge you online or store the order in a database. Your order is confirmed only after availability and advance payment are confirmed.</small>
+</div></div>
+<script>
+const menu=[
+["Thali (Full Meals)",[
+["Paneer Thali",200,"🍛"],["Mushroom Thali",200,"🍄"],["Veg Thali",100,"🥗"],["Chicken Thali",200,"🍗"],["Meat Thali",250,"🍖"],["Fish Thali",200,"🐟"],["Egg Curry Thali",150,"🍳"]]],
+["Rice & Special",[
+["Kadhi Chawal",50,"🍚"],["Dooska + Sabji",50,"🥘"],["Chhilka + Sabji",50,"🫓"],["Khichdi",50,"🍲"],["Veg Biryani",100,"🍛"]]],
+["Roti & Paratha",[
+["4 Roti + Sabji",50,"🫓"],["4 Litti + Chokha",100,"🥙"],["4 Bhatura + Chhola",100,"🫓"],["2 Aloo Paratha",50,"🥔"],["2 Gobhi Paratha",50,"🥬"],["2 Mooli Paratha",50,"🫓"],["2 Sattu Paratha",50,"🌾"]]],
+["Snacks",[
+["Samosa (per piece)",5,"🥟"],["Bread Pakoda (per piece)",10,"🍞"],["Pyaj Pakodi (per plate)",50,"🧅"],["Aloo Pakodi (per plate)",50,"🥔"],["Palak Pakodi (per plate)",50,"🥬"]]],
+["Sweets",[
+["Chawal ki Kheer (per plate)",100,"🍚"],["Suji ka Halwa (per plate)",100,"🍮"]]]
+];
+let active="All", cart={};
+const categories=["All",...menu.map(x=>x[0])];
+function renderCategories(){document.getElementById("categories").innerHTML=categories.map(c=>`<button class="cat ${active===c?'active':''}" onclick="setCategory('${c}')">${c}</button>`).join("")}
+function renderMenu(){
+ const items=menu.filter(x=>active==="All"||x[0]===active).flatMap(x=>x[1]);
+ document.getElementById("menuGrid").innerHTML=items.map(([name,price,emoji])=>`<article class="food-card"><div class="food-art">${emoji}</div><div class="food-info"><h3>${name}</h3><div class="food-meta"><span class="price">₹${price}</span><button class="add" onclick="addItem('${name.replace(/'/g,"\\'")}',${price})">+ Add</button></div></div></article>`).join("");
+}
+function setCategory(c){active=c;renderCategories();renderMenu()}
+function addItem(name,price){cart[name]=cart[name]||{price,qty:0};cart[name].qty++;updateCart()}
+function changeQty(name,delta){cart[name].qty+=delta;if(cart[name].qty<=0)delete cart[name];updateCart()}
+function updateCart(){let count=Object.values(cart).reduce((a,b)=>a+b.qty,0),total=Object.values(cart).reduce((a,b)=>a+b.qty*b.price,0);document.getElementById("navCount").textContent=count;document.getElementById("cartCount").textContent=count;document.getElementById("cartBar").style.display=count?"block":"none";document.getElementById("total").textContent="₹"+total;
+ document.getElementById("cartLines").innerHTML=count?Object.entries(cart).map(([n,v])=>`<div class="cart-line"><div><b>${n}</b><br><small>₹${v.price} each</small></div><div class="qty"><button onclick="changeQty('${n.replace(/'/g,"\\'")}',-1)">−</button> <b>${v.qty}</b> <button onclick="changeQty('${n.replace(/'/g,"\\'")}',1)">+</button></div><b>₹${v.qty*v.price}</b></div>`).join(""):"Your cart is empty. Add items from the menu."}
+function openCart(){document.getElementById("backdrop").style.display="flex";updateCart()}
+function closeCart(){document.getElementById("backdrop").style.display="none"}
+function sendOrder(){if(!Object.keys(cart).length){alert("Please add at least one item.");return}let name=document.getElementById("customerName").value.trim(),address=document.getElementById("customerAddress").value.trim(),note=document.getElementById("customerNote").value.trim();if(!name||!address){alert("Please enter your name and delivery address.");return}
+ let lines=Object.entries(cart).map(([n,v])=>`${n} x ${v.qty} = ₹${v.qty*v.price}`).join("\n"),total=Object.values(cart).reduce((a,b)=>a+b.qty*b.price,0);
+ let msg=`Namaste Jharkhandi Tadka! I would like to place an order:\n\n${lines}\n\nTotal: ₹${total}\nName: ${name}\nDelivery address: ${address}\n${note?`Note: ${note}\n`:""}\nPlease confirm availability, delivery and advance UPI payment details.`;
+ window.open("https://wa.me/917905997444?text="+encodeURIComponent(msg),"_blank");}
+renderCategories();renderMenu();updateCart();document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
