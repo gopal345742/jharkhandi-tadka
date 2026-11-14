@@ -26,7 +26,7 @@ h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:.99;letter-spacing:-.055em;mar
 .wrap{max-width:1150px;margin:auto;padding:68px 22px}.section-head{text-align:center;margin-bottom:32px}.section-head .eyebrow{color:var(--green2)}h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:8px 0}.section-head p{color:var(--muted);margin:0}
 .categories{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:0 0 28px}.cat{border:1px solid var(--line);background:white;padding:9px 16px;border-radius:999px;font-weight:700;color:#4d594e}.cat.active,.cat:hover{background:var(--green);color:white;border-color:var(--green)}
 .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.food-card{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}.food-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #203a2012}
-.food-art{height:132px;background:linear-gradient(135deg,#f8edda,#e9d2a9);display:grid;place-items:center;font-size:4.3rem}.food-info{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.food-info h3{margin:0;font-size:1.05rem}.food-meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto}.price{font-size:1.15rem;font-weight:900;color:var(--green)}.add{border:0;background:#eaf2e9;color:var(--green);font-weight:850;border-radius:999px;padding:8px 14px}.add:hover{background:var(--green);color:white}
+.food-art{height:165px;background:#f3ead9;overflow:hidden}.food-art img{width:100%;height:100%;object-fit:cover;display:block}.food-info{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.food-desc{font-size:.88rem;line-height:1.45;color:var(--muted);min-height:2.5em}.food-portion{font-size:.82rem;color:#4e5c4f;background:#f3f5ed;border-radius:8px;padding:5px 8px;display:inline-block;width:max-content;max-width:100%}.food-unavailable{opacity:.58}.food-unavailable .add{background:#ddd;color:#555;cursor:not-allowed}.food-info h3{margin:0;font-size:1.05rem}.food-meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto}.price{font-size:1.15rem;font-weight:900;color:var(--green)}.add{border:0;background:#eaf2e9;color:var(--green);font-weight:850;border-radius:999px;padding:8px 14px}.add:hover{background:var(--green);color:white}
 .notice{background:var(--cream);border:1px solid #f0dfbb;border-radius:20px;padding:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.notice-item{display:flex;gap:12px;align-items:flex-start}.notice-item b{display:block}.notice-item span{font-size:1.5rem}
 .about{background:#f5f2e8}.about-inner{max-width:1150px;margin:auto;padding:65px 22px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-art{min-height:280px;border-radius:28px;background:linear-gradient(140deg,#d9e2c9,#f1d5a5);display:grid;place-items:center;font-size:7rem}.about p{line-height:1.8;color:#59645a}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{border:1px solid var(--line);border-radius:20px;padding:24px;background:white}.contact-card h3{margin:0 0 8px}.contact-card p{color:var(--muted);line-height:1.65}
@@ -34,7 +34,7 @@ footer{background:#102c20;color:#eaf0e8;padding:30px 22px}.footer-inner{max-widt
 .cartbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:20;background:var(--gold);color:#1d2d21;border:0;border-radius:999px;padding:13px 22px;font-weight:900;box-shadow:0 8px 28px #0003;display:none;white-space:nowrap}
 .modal-backdrop{display:none;position:fixed;inset:0;background:#0008;z-index:30;padding:18px;align-items:center;justify-content:center}.modal{background:white;border-radius:22px;max-width:520px;width:100%;max-height:85vh;overflow:auto;padding:23px}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h3{margin:0}.close{border:0;background:#f1f1ed;border-radius:50%;width:35px;height:35px;font-size:1.2rem}.cart-lines{margin:18px 0}.cart-line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.qty button{border:0;border-radius:50%;width:27px;height:27px;background:#edf3eb;color:var(--green);font-weight:900}.total{display:flex;justify-content:space-between;font-weight:900;font-size:1.15rem;padding:12px 0}.field{width:100%;padding:12px;border:1px solid #d8ded5;border-radius:10px;margin:7px 0 12px;font:inherit}.wa{display:block;text-align:center;width:100%;padding:14px;border:0;border-radius:12px;background:#1d9d55;color:white;font-weight:900}
 @media(max-width:800px){.hero-inner{grid-template-columns:1fr;padding-top:55px}.hero-plate{min-height:260px}.menu-grid{grid-template-columns:repeat(2,1fr)}.about-inner{grid-template-columns:1fr}.navlinks{gap:12px}.notice{grid-template-columns:1fr}}
-@media(max-width:540px){.nav{padding:10px 15px}.navlinks a:not(.order-btn){display:none}.brand{font-size:1rem}.brand-mark{width:36px;height:36px}.hero-inner{padding:48px 18px}.hero-plate{min-height:220px}.wrap{padding:52px 16px}.menu-grid{grid-template-columns:1fr 1fr;gap:10px}.food-art{height:100px;font-size:3.2rem}.food-info{padding:12px}.food-info h3{font-size:.92rem}.add{padding:7px 10px}.price{font-size:1rem}.contact-grid{grid-template-columns:1fr}.about-inner{padding:50px 18px}}
+@media(max-width:540px){.nav{padding:10px 15px}.navlinks a:not(.order-btn){display:none}.brand{font-size:1rem}.brand-mark{width:36px;height:36px}.hero-inner{padding:48px 18px}.hero-plate{min-height:220px}.wrap{padding:52px 16px}.menu-grid{grid-template-columns:1fr 1fr;gap:10px}.food-art{height:112px}.food-info{padding:12px}.food-info h3{font-size:.92rem}.add{padding:7px 10px}.price{font-size:1rem}.contact-grid{grid-template-columns:1fr}.about-inner{padding:50px 18px}}
 </style>
 </head>
 <body>
@@ -83,28 +83,22 @@ footer{background:#102c20;color:#eaf0e8;padding:30px 22px}.footer-inner{max-widt
  <button class="wa" onclick="sendOrder()">Submit website order via WhatsApp</button>
  <small style="display:block;color:#777;margin-top:10px">This website order form prepares your order and sends it to the business WhatsApp number. It does not charge you online or store the order in a database. Your order is confirmed only after availability and advance payment are confirmed.</small>
 </div></div>
+<script src="menu.js"></script>
 <script>
-const menu=[
-["Thali (Full Meals)",[
-["Paneer Thali",200,"🍛"],["Mushroom Thali",200,"🍄"],["Veg Thali",100,"🥗"],["Chicken Thali",200,"🍗"],["Meat Thali",250,"🍖"],["Fish Thali",200,"🐟"],["Egg Curry Thali",150,"🍳"]]],
-["Rice & Special",[
-["Kadhi Chawal",50,"🍚"],["Dooska + Sabji",50,"🥘"],["Chhilka + Sabji",50,"🫓"],["Khichdi",50,"🍲"],["Veg Biryani",100,"🍛"]]],
-["Roti & Paratha",[
-["4 Roti + Sabji",50,"🫓"],["4 Litti + Chokha",100,"🥙"],["4 Bhatura + Chhola",100,"🫓"],["2 Aloo Paratha",50,"🥔"],["2 Gobhi Paratha",50,"🥬"],["2 Mooli Paratha",50,"🫓"],["2 Sattu Paratha",50,"🌾"]]],
-["Snacks",[
-["Samosa (per piece)",5,"🥟"],["Bread Pakoda (per piece)",10,"🍞"],["Pyaj Pakodi (per plate)",50,"🧅"],["Aloo Pakodi (per plate)",50,"🥔"],["Palak Pakodi (per plate)",50,"🥬"]]],
-["Sweets",[
-["Chawal ki Kheer (per plate)",100,"🍚"],["Suji ka Halwa (per plate)",100,"🍮"]]]
-];
+const categories=["All",...new Set(menu.map(item=>item.category))];
 let active="All", cart={};
-const categories=["All",...menu.map(x=>x[0])];
-function renderCategories(){document.getElementById("categories").innerHTML=categories.map(c=>`<button class="cat ${active===c?'active':''}" onclick="setCategory('${c}')">${c}</button>`).join("")}
+function renderCategories(){document.getElementById("categories").innerHTML=categories.map(c=>`<button class="cat ${active===c?'active':''}" onclick="setCategory('${c.replace(/'/g,"\\'")}')">${c}</button>`).join("")}
 function renderMenu(){
- const items=menu.filter(x=>active==="All"||x[0]===active).flatMap(x=>x[1]);
- document.getElementById("menuGrid").innerHTML=items.map(([name,price,emoji])=>`<article class="food-card"><div class="food-art">${emoji}</div><div class="food-info"><h3>${name}</h3><div class="food-meta"><span class="price">₹${price}</span><button class="add" onclick="addItem('${name.replace(/'/g,"\\'")}',${price})">+ Add</button></div></div></article>`).join("");
+ const items=menu.filter(item=>active==="All"||item.category===active);
+ document.getElementById("menuGrid").innerHTML=items.map((item,index)=>`<article class="food-card ${item.available?'':'food-unavailable'}">
+ <div class="food-art"><img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.style.display='none'"></div>
+ <div class="food-info"><h3>${item.name}</h3><div class="food-desc">${item.description}</div>
+ <span class="food-portion">Quantity: ${item.quantity}</span>
+ <div class="food-meta"><span class="price">₹${item.price}</span>${item.available?'<span style="font-size:.78rem;color:#26743b;font-weight:750">● In stock</span>':'<span style="font-size:.78rem;color:#a33;font-weight:750">● Unavailable</span>'}</div>
+ <button class="add" ${item.available?'':'disabled'} onclick="addItem('${item.name.replace(/'/g,"\\'")}',${item.price},'${item.quantity.replace(/'/g,"\\'")}')">${item.available?'+ Add to order':'Unavailable'}</button></div></article>`).join("");
 }
 function setCategory(c){active=c;renderCategories();renderMenu()}
-function addItem(name,price){cart[name]=cart[name]||{price,qty:0};cart[name].qty++;updateCart()}
+function addItem(name,price,portion){const key=name+" ("+portion+")";cart[key]=cart[key]||{price,qty:0};cart[key].qty++;updateCart()}
 function changeQty(name,delta){cart[name].qty+=delta;if(cart[name].qty<=0)delete cart[name];updateCart()}
 function updateCart(){let count=Object.values(cart).reduce((a,b)=>a+b.qty,0),total=Object.values(cart).reduce((a,b)=>a+b.qty*b.price,0);document.getElementById("navCount").textContent=count;document.getElementById("cartCount").textContent=count;document.getElementById("cartBar").style.display=count?"block":"none";document.getElementById("total").textContent="₹"+total;
  document.getElementById("cartLines").innerHTML=count?Object.entries(cart).map(([n,v])=>`<div class="cart-line"><div><b>${n}</b><br><small>₹${v.price} each</small></div><div class="qty"><button onclick="changeQty('${n.replace(/'/g,"\\'")}',-1)">−</button> <b>${v.qty}</b> <button onclick="changeQty('${n.replace(/'/g,"\\'")}',1)">+</button></div><b>₹${v.qty*v.price}</b></div>`).join(""):"Your cart is empty. Add items from the menu."}
